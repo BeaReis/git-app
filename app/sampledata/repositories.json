@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": 390388025,
+      "name": "BootcampInter",
+      "owner": {
+        "login": "BeaReis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63968003?v=4"
+      },
+      "html_url": "https://github.com/BeaReis/BootcampInter",
+      "description": "Repositório de atividades do Bootcamp Inter Android Developer da Digital Innovation One",
+      "stargazers_count": 0,
+      "language": "Kotlin"
+    },
+    {
+      "id": 411063583,
+      "name": "business-card-app",
+      "owner": {
+        "login": "BeaReis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63968003?v=4"
+      },
+      "html_url": "https://github.com/BeaReis/business-card-app",
+      "description": "Esse é um dos projetos propostos no Bootcamp Inter da plataforma DIO",
+      "stargazers_count": 0,
+      "language": "Kotlin"
+    },
+    {
+      "id": 416062354,
+      "name": "google-code-labs",
+      "owner": {
+        "login": "BeaReis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63968003?v=4"
+      },
+      "html_url": "https://github.com/BeaReis/google-code-labs",
+      "description": "Repositório para as aplicações desenvolvidas no code labs da Google",
+      "stargazers_count": 0,
+      "language": "Kotlin"
+    },
+    {
+      "id": 416330548,
+      "name": "uri-online-judge",
+      "owner": {
+        "login": "BeaReis",
+        "avatar_url": "https://avatars.githubusercontent.com/u/63968003?v=4"
+      },
+      "html_url": "https://github.com/BeaReis/uri-online-judge",
+      "description": "Repositório com resoluções dos problemas da plataforma BeeCrowd, antiga UriOnlineJudge",
+      "stargazers_count": 0,
+      "language": "Kotlin"
+    }
+  ]
+}

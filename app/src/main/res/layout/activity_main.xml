@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="#E1F6FF">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#005C83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="App Repositories"
+        app:titleTextColor="@color/white"/>
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/iv_owner"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:roundPercent="5"/>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_owner_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@sample/repositories.json/data/owner/login"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/iv_owner"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tv_languages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/linguagens"
+        app:layout_constraintStart_toEndOf="@+id/iv_owner"
+        app:layout_constraintTop_toBottomOf="@+id/tv_owner_name" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_kotlin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/kotlin"
+        app:chipBackgroundColor="#FFC107"
+        app:layout_constraintStart_toEndOf="@id/iv_owner"
+        app:layout_constraintTop_toBottomOf="@+id/tv_languages"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_repos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/iv_owner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/item_repo"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
